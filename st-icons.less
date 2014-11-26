@@ -1,0 +1,62 @@
+.social-sprite(@pos1: 0, @pos2: 0){
+	background: url(../images/social-footer.png) no-repeat @pos1 @pos2;
+	width: 26px;
+	height: 26px;
+	display: inline-block;
+	overflow: hidden;
+	letter-spacing: 5px;
+}
+
+
+.st-icon {
+
+	.updates{
+		.social-sprite(0, 0);
+		&:hover {
+			.social-sprite(0px, -26px);
+		}
+	}
+
+	.newsroom{
+		.social-sprite(-35px, 0);
+		&:hover {
+			.social-sprite(-35px, -26px);
+		}
+	}
+
+	.facebook{
+		.social-sprite(-70px, 0);
+		&:hover {
+			.social-sprite(-70px, -26px);
+		}
+	}
+
+	.twitter{
+		.social-sprite(-106px, 0);
+		&:hover {
+			.social-sprite(-106px, -26px);
+		}
+	}
+
+	.google{
+		.social-sprite(-140px, 0);
+		&:hover {
+			.social-sprite(-140px, -26px);
+		}
+	}
+
+	.pinterest{
+		.social-sprite(-175px, 0);
+		&:hover {
+			.social-sprite(-175px, -26px);
+		}
+	}
+
+	.instagram{
+		.social-sprite(-208px, 0);
+		&:hover {
+			.social-sprite(-208px, -26px);
+		}
+	}
+
+}

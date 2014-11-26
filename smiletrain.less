@@ -1,0 +1,569 @@
+/***********SmileTrain CSS************/
+
+body {
+	margin-top: @navbar-height;
+	@media (max-width: @screen-md-min) {
+		margin-top: @navbar-height + 50;
+	}
+	@media (max-width: 298px){
+		margin-top: 195px;	
+	}
+}
+
+/***************LO Override styles**********/
+a, a:link, a:visited{text-decoration: none;}
+.responsive {witdth: 98%;}
+
+
+
+/********header********/
+
+.navbar-fixed-top a{
+	font-family: "Gotham Narrow Bold", Helvetica, Arial, sans-serif;
+	font-size: 15px;
+}
+
+.right-cta {
+    float: left;
+    width: 100%;
+	.text-center();
+	padding:0;
+	margin: 0;
+	
+	#donate-btn {
+		a{
+		color: @white;	
+		}
+    color: @white;
+    float: left;
+    min-height: 1px;
+    position: relative;
+    width: 50%;
+	&:hover,
+  	&:focus {
+  		#gradient.vertical( @red-light; @red-light; 0%; 50%;);
+  		}
+
+	#gradient.vertical(@red-light;@red-dark;0%;50%;);
+	}
+	#powerofasmile-btn {
+		a{
+		color: @white;	
+		}
+    color: @white;
+    float: left;
+    min-height: 1px;
+    position: relative;
+    width: 50%;
+	&:hover,
+  	&:focus {
+  		#gradient.vertical( @blue-light; @blue-light; 0%; 50%;);
+  		}
+
+	#gradient.vertical( @blue-light; @blue-dark; 0%; 50%;);
+	}
+}
+	
+	
+
+/*for landing page wrapper - re-evaluate need at end of project*/
+.st-menu {
+	font-family: "Gotham Narrow Bold", Helvetica, Arial, sans-serif;
+	font-size: 15px;
+	.make-row();
+	.st-brand {
+		.make-lg-column(2);
+		.make-xs-column(3);
+	}
+	.left-menu {
+		.make-lg-column(6);
+		.make-xs-column(9);
+	}
+
+	.tr-login {
+		.make-lg-column(4);
+		.make-xs-column(12);
+	}
+	.right-cta {
+		.make-lg-column(4);
+		.make-xs-column(12);
+		.make-row();
+
+		padding-left: 0px;
+		padding-right: 0px;
+		margin:0px;
+
+		.text-center();
+
+		#powerofasmile-btn {
+			a {
+				color:#fff;
+			}
+
+			//height: @navbar-height;
+			.make-md-column(8);
+			.make-sm-column(6);
+			.make-xs-column(12);
+
+			&:hover,
+  			&:focus {
+  				#gradient.vertical( @blue-light; @blue-light; 0%; 50%;);
+  			}
+
+			#gradient.vertical( @blue-light; @blue-dark; 0%; 50%;);
+		}
+
+		#donate-btn {
+			a {
+				color: @white;
+			}
+
+			//height: @navbar-height;
+			.make-md-column(4);
+			.make-sm-column(6);
+			.make-xs-column(12);
+
+			&:hover,
+  			&:focus {
+  				#gradient.vertical( @red-light; @red-light; 0%; 50%;);
+  			}
+
+			#gradient.vertical(@red-light;@red-dark;0%;50%;);
+			color:@white;
+		}
+
+	}
+}
+
+
+
+/*********footer********/
+footer {
+	background-color: #436bac;
+	border-top: 15px solid #80abd6;
+	margin: 0;
+	color: @white;
+	font-size: 12px;
+	margin-top: 75px;
+
+	p{
+		font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	}
+
+	a {
+		color:@white !important;
+		font-family: "Gotham Book",Helvetica,Arial,sans-serif !important;
+		font-size: 11px !important;
+		&:hover,
+  		&:focus {
+  			color: #f37654 !important;
+  			text-decoration: none;
+  		}
+	}
+
+	ul{
+		.list-unstyled();
+	}
+
+	h3 {
+		font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+		font-weight: bold;
+		text-transform: uppercase;
+		font-size: 14px;
+		color: @white;
+	}
+	
+	.footer-section {
+		border-right: 2px dotted #ffffff;
+			@media (max-width: @screen-md-min) {
+				border-right: none;
+			}
+	}
+	#row1{
+	border-bottom: 2px dotted #ffffff;
+	padding: 85px 0 25px;	
+	}
+		
+	#row2{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	}
+	
+	.footer-logos a{padding: 0 5px;}
+	
+	#be-social {
+  	border-bottom: 2px dotted #ffffff;
+	}
+	
+	.footer-bg {
+    background: url("../images/footer-bg-top.png") no-repeat scroll left top rgba(0, 0, 0, 0);
+    margin: -53px auto 0;
+	}
+	
+	@media (max-width: @screen-md-min){
+	.navbar-form{
+		width: 99%;
+		box-shadow: none;
+		border: none;
+	}
+	.footer-logos {padding-bottom: 15px;}
+	
+	#row1, #be-social{
+	border-bottom: none;	
+	}	
+	}
+	
+
+	/*for landing page wrapper - re-evaluate need at end of project*/
+	.footer-bd {
+		background: url(http://www.smiletrain.org/assets/images/footer-bg-top.png) no-repeat left top;
+		margin: -53px auto 0;
+		padding: 38px 0 0;
+
+			.footer-section {
+				border-right: 2px dotted #ffffff;
+				@media (max-width: @screen-md-min) {
+					border-right: none;
+				}
+			}
+
+		.row1 {
+			.make-row();
+			padding: 65px 0 25px;
+			border-bottom: 2px dotted #ffffff;
+
+			#mission {
+				.make-md-column(4);
+				.make-xs-column(12);
+			}
+
+			#about-us {
+				.make-md-column(2);
+				.make-xs-column(6);
+			}
+
+			#ways-to-donate {
+				.make-md-column(2);
+				.make-xs-column(6);
+			}
+
+			#footer-end {
+				.make-md-column(4);
+				.make-xs-column(12);
+				.make-row();
+
+				#be-social {
+					border-bottom: 2px dotted #ffffff;
+					.make-xs-column(12);
+					@media (max-width: @screen-md-min) {
+						.text-center();
+					}
+				}
+
+				#search {
+					.make-xs-column(12);
+					vertical-align: middle;
+				}
+			}
+
+		}
+
+
+		.row2 {
+			margin-top: 20px;
+			.make-row();
+			#footer-logos {
+				.make-md-column(3);
+				.text-center();
+			}
+
+			#lower-nav {
+				.make-md-column(9);
+			}
+		}
+
+
+	}
+
+}
+
+
+/*********general styles*********/
+
+.row-st{padding: 15px 0;}
+
+.well-st {
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  background-color: @well-bg;
+  border: 1px solid @well-border;
+  .box-shadow(inset 0 1px 1px rgba(0,0,0,.05));
+  blockquote {
+    border-color: #ddd;
+    border-color: rgba(0,0,0,.15);
+  }
+
+  p{
+  	font-size: 14px;
+  }
+
+  h2, h3, h4, h5, h6,
+  .h2, .h3, .h4, .h5, .h6 {
+  	color: @navy-dark;
+  	}
+
+
+}
+
+.well-st-nostyle{
+	border: none;
+	background: none;	
+	border-radius: 0; 
+	box-shadow: none;
+	padding: 0;
+}
+
+.st-large-text{
+	display: block; 
+	font-weight: bold; 
+	font-size: 35px;
+}
+
+.orange-box {
+  color: #ffffff;
+  min-height: 1px;
+  position: relative;
+  text-align:center;
+	&:hover,
+  	&:focus {
+  		#gradient.vertical( @red-light; @red-light; 0%; 50%;);
+  	}
+
+  #gradient.vertical(@red-light;@red-dark;0%;50%;);
+}
+
+
+.blue-box {
+  color: #ffffff;
+  min-height: 1px;
+  position: relative;
+  #gradient.vertical( @blue-light; @blue-dark; 0%; 50%;);
+  h2, h3{color: #fff;}
+  a{color: #f37654;}
+}
+
+
+
+
+/******banner images and slideshows******/
+
+.banner {
+    position: relative;
+}
+
+.banner .bannerimg {
+  width: 100%;
+  @media (max-width: @screen-md-min) {
+    padding: 0 15px;
+	}
+}
+
+.banner .cycle-slideshow{
+	width: 90%; 
+	max-width: 90%; 
+	margin: 0 auto; 
+	padding: 0; 
+	@media (max-width: 500px){
+		max-width: 100%;
+		width: 100%;		
+	}
+}
+.banner .cycle-slideshow>div{width: 100%;}
+.banner .cycle-slideshow>div>img{width: 100%}
+
+.banner .slideselect{
+    position: absolute;
+    top: 50%;
+    z-index: 101;
+	font-size: 40px;
+	color: #000;
+	padding: 0 .3%;
+	text-decoration: none;
+	@media (max-width: 500px){
+		font-size: 35px;
+		position: relative;
+		display: inline-block;
+	}
+}
+
+@media (max-width: 500px){
+	.slideshow-controls {
+    text-align: center;
+	}
+	
+}
+
+.banner #prev{
+    left: 0;
+}
+.banner #next{
+    right: 0;
+}
+
+#slide-pager-num a{
+	display: inline-block;
+	background: none repeat scroll 0 0 #000;
+    color: #fff;
+    margin: 5px;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+#slide-pager-num strong.cycle-pager-active a{
+	background: none repeat scroll 0 0 #999;
+}
+
+#slide-pager-bullet a{
+    background: none repeat scroll 0 0 #80aad5;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    height: 8px;
+    line-height: 0;
+    margin: 0 5px;
+    text-indent: -9999px;
+    width: 8px;	
+}
+#slide-pager-bullet strong.cycle-pager-active a{
+background: none repeat scroll 0 0 #ee3124;
+}
+
+.slide-caption{
+	display: block;
+	color: #fff;
+	background: none repeat scroll 0 0 rgba(255, 255, 255, 0.8);
+	bottom: 0;
+    font-size: 0.9em;
+    margin: 0;
+    padding: 1%;
+    position: absolute;
+	width: 100%;
+	@media (max-width: 990px){
+	padding: 1% 5%;
+	}
+	@media (max-width:400px){
+		padding: 1% 10%;
+	}
+}
+	
+/********athletics section********/
+
+.athletics .right-cta #donate-btn {
+	padding-left: 15px;
+    padding-right: 15px;
+	width: 100%;	
+}
+
+.athletics .race {
+	position: relative;
+		
+	img{margin-left: 15px;}
+	
+	.racedate {
+    background-color: #111;
+    top: 25px;
+    color: #fff;
+    font-weight: bold;
+    height: 75px;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    width: 60px;
+	
+		.mo {
+		display: block;
+		margin: 10px 0 5px;
+		}
+		.day {
+		font-size: 26px;
+		}
+	}
+
+
+}
+
+.athletics .orange-box a {
+    color: #ffffff;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 28px;	
+    padding-bottom: 30%;
+    padding-top: 30%;
+    text-decoration: none;
+	@media (max-width: 992px){
+	padding-top: 10px;
+	padding-bottom: 10px;
+	}
+}
+
+
+.athletics #TeamRaiserQuickSearch{
+	width: 50%;
+	@media (max-width: 500px){
+	width: 100%;
+	}	
+}
+
+
+.athletics .racegroup .race, .athletics .trainingtip{ 
+background: url("http://support.smiletrain.org/images/content/pagebuilder/tip_arrow.png") no-repeat scroll 98% center #f5f5f5;
+margin-bottom: 20px;
+padding: 15px;
+}
+
+.athletics .racegroup .race .imgdate{position: relative; }
+
+.athletics .racegroup .race .racedate{
+	left: 15px;
+	top: auto;
+	bottom: 0;
+}
+.athletics .racegroup .race a, .athletics .racegroup .race .loc {
+    font-size: 16px;
+	 display: block;
+}
+.athletics h5.ttipttl{color: #4b79bc; font-weight: bold;}
+
+.athletics .blog-athlete{
+	position: relative;
+		
+	img{width: 100%}
+	
+	h3{
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 1%;
+    color: #fff;
+    font-family: Helvetica,Arial,Verdana,sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 120%;
+    text-shadow: 2px 2px black;
+		@media (max-width: 500px){
+		font-size: 20px;
+		}
+	}
+}
+
+.athletics-lo .right-cta #donate-btn{display: none;}
+
+
+		
+
+
+	
+	
+
+
