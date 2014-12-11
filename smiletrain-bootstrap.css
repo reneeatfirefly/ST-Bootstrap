@@ -5738,10 +5738,10 @@ body {
 }
 @media (max-width: 992px) {
   body {
-    margin-top: 115px;
+    margin-top: 135px;
   }
 }
-@media (max-width: 298px) {
+@media (max-width: 268px) {
   body {
     margin-top: 195px;
   }
@@ -6333,6 +6333,9 @@ footer .footer-bd .row2 #lower-nav {
   .slide-caption {
     padding: 1% 10%;
   }
+}
+div.responsive {
+  width: 98%;
 }
 /********athletics section********/
 .athletics .right-cta #donate-btn {
