@@ -1,4 +1,64 @@
 /********community section********/
+.community .right-cta #donate-btn {
+	padding-left: 15px;
+    padding-right: 15px;
+	width: 100%;	
+}
 
-.community{}
+
+.community .slide-caption-right{
+	top: 50%;
+	width: 25%;
+	@media (max-width: @screen-md-min){
+		top: 30%;
+		right:5%;
+		width: 25%;
+	}
+	@media (max-width: 525px){
+		h2,h3{display: none;}
+	}
+	
+}
+
+.community-events{
+	.make-row();
+	.event {
+		width: 100%;
+		margin-bottom: 15px;
+		h3, a{text-align: center;}
+		a{display: block;}
+		img{
+			@media (max-width: @screen-sm-min){width: 20%; height: auto;}
+			@media (max-width: 380px){width: 30%; height: auto;}		
+		}
+		.make-sm-column(6);	
+		@media (min-width: @screen-sm-min){
+		h3, a{text-align: left;}
+		a{display: inline;}
+		p {
+		.make-sm-column(9);
+		.make-lg-column(10);
+		vertical-align: middle;
+		}
+		img {
+		.make-sm-column(3);
+		.make-lg-column(2);
+		width: auto;
+		vertical-align: middle;
+		}
+		}
+	}
+}
+
+
+
+.emailconfirmsuccess{
+	display: none;
+	background-color: #dcefb9;
+	color: black;
+}
+
+.emailconfirmsuccess p{
+	text-align: center;
+}
 
