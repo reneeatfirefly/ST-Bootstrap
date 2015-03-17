@@ -1,0 +1,30 @@
+{
+  "name": "SmileTrain",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/reneeatfirefly/ST-Bootstrap.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/reneeatfirefly/ST-Bootstrap/issues"
+  },
+  "homepage": "https://github.com/reneeatfirefly/ST-Bootstrap",
+  "dependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-less": "^1.0.0",
+    "grunt-contrib-cssmin": "^0.12.2",
+    "grunt-contrib-compress": "^0.13.0"
+  },
+  "devDependencies": {
+    "grunt-contrib-compress": "^0.13.0",
+    "grunt-contrib-cssmin": "^0.12.2",
+    "grunt-contrib-less": "^1.0.0"
+  }
+}
