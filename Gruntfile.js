@@ -6,7 +6,7 @@ module.exports = function(grunt) {
         less: {
             production: {
                 files: {
-                    'assets/css/st-bt.css': 'less/smiletrain-bootstrap.less'
+                    'assets/css/smiletrain-bootstrap.css': 'less/smiletrain-bootstrap.less'
                 }
             }
         },
