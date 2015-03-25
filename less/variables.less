@@ -5,20 +5,8 @@
 
 //== Colors
 //
-//## Gray and brand colors for use across Bootstrap.
 
-@gray-darker:            lighten(#000, 13.5%); // #222
-@gray-dark:              lighten(#000, 20%);   // #333
-@gray:                   lighten(#000, 33.5%); // #555
-@gray-light:             lighten(#000, 46.7%); // #777
-@gray-lighter:           lighten(#000, 93.5%); // #eee
-
-@brand-primary:         #428bca;
-@brand-success:         #5cb85c;
-@brand-info:            #5bc0de;
-@brand-warning:         #f0ad4e;
-@brand-danger:          #d9534f;
-
+//Smile Train Brand Colors
 @blue-dark: 			#4b79bc;
 @blue-light:			#6daadc;
 
@@ -44,6 +32,18 @@
 @navy-dark:				#04247b;
 @grey:					#8d8c8f;
 
+//## Gray and brand colors for use across Bootstrap.
+@gray-darker:            lighten(#000, 13.5%); // #222
+@gray-dark:              lighten(#000, 20%);   // #333
+@gray:                   lighten(#000, 33.5%); // #555
+@gray-light:             lighten(#000, 46.7%); // #777
+@gray-lighter:           lighten(#000, 93.5%); // #eee
+
+@brand-primary:         @blue-dark;
+@brand-success:         @green-dark;
+@brand-info:            #5bc0de;
+@brand-warning:         @orange-dark;
+@brand-danger:          @red-dark;
 
 //== Scaffolding
 //
@@ -378,7 +378,7 @@
 @navbar-default-color:             #777;
 @navbar-default-bg:                #fff;
 // @navbar-default-border:            darken(@navbar-default-bg, 6.5%);
-@navbar-default-border:			   @grey-light;
+@navbar-default-border:			   @grey-lighter;
 
 // Navbar links
 @navbar-default-link-color:                @blue-light;
