@@ -6182,16 +6182,22 @@ footer #search .form-control {
     padding: 0;
   }
 }
+.section-nav a {
+  color: #4b79bc;
+  display: block;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 8px 10px 8px 0;
+  text-decoration: none;
+}
+.section-nav a:hover {
+  color: #6daadc;
+}
 .section-nav h2 {
-  color: #000;
+  color: #000000;
   font-size: 18px;
   margin-bottom: 25px;
   font-weight: bold;
-}
-@media (max-width: 992px) {
-  .section-nav ul {
-    padding-left: 0px;
-  }
 }
 .section-nav li {
   border-bottom: 1px solid #d9d9d9;
@@ -6200,30 +6206,26 @@ footer #search .form-control {
 .section-nav li.last {
   border: medium none;
 }
-.section-nav a {
-  color: #4c6baf;
-  display: block;
-  font-size: 13px;
-  font-weight: bold;
-  padding: 8px 10px 8px 0;
-  text-decoration: none;
+@media (max-width: 992px) {
+  .section-nav ul {
+    padding-left: 0px;
+  }
 }
 @media (min-width: 992px) {
-  .sidebar.section-nav {
+  .section-nav.sidebar {
     padding-left: 0px;
     float: left;
     width: 25% !important;
   }
-  .sidebar.section-nav ul {
+  .section-nav.sidebar ul {
     padding-left: 15px;
   }
+}
+@media (min-width: 992px) {
   .main-content.with-section-nav {
     float: left;
     width: 75% !important;
   }
-}
-.section-nav a:hover {
-  color: #6daadc;
 }
 .section-heading {
   font-family: "Gotham Narrow Bold", Helvetica, Arial, sans-serif;
@@ -6376,7 +6378,7 @@ footer #search .form-control {
 }
 .blue-box h2,
 .blue-box h3 {
-  color: #fff;
+  color: #ffffff;
 }
 .blue-box a {
   color: #f37654;
@@ -6393,7 +6395,7 @@ footer #search .form-control {
   width: 100%;
   font-family: "HoeflerTxt-Roman", Georgia, serif !important;
   font-size: 24px;
-  color: #fff;
+  color: #ffffff;
   line-height: 1;
   position: relative;
 }
@@ -6437,7 +6439,7 @@ footer #search .form-control {
   }
 }
 .donor-bar a {
-  color: #fff;
+  color: #ffffff;
   display: block;
   width: 100%;
 }
@@ -6636,7 +6638,7 @@ table.paginator td.pg-items {
 }
 .hdr-arrow a {
   display: inline-block;
-  color: #000;
+  color: #000000;
   background: url(../images/arrow-se.png) no-repeat 100% 2px;
   padding-right: 17px;
 }
@@ -6748,7 +6750,7 @@ table.paginator td.pg-items {
 }
 .date-style-a {
   background: none repeat scroll 0 0 #404040;
-  color: #fff;
+  color: #ffffff;
   font-weight: bold;
   line-height: 1;
   padding: 13px 0 0 13px;
@@ -6940,8 +6942,8 @@ ul.dated a:hover {
 }
 @media (max-width: 992px) {
   .darkener {
-    border-left: 15px solid #fff;
-    border-right: 15px solid #fff;
+    border-left: 15px solid #ffffff;
+    border-right: 15px solid #ffffff;
   }
 }
 .banner {
@@ -6968,48 +6970,48 @@ ul.dated a:hover {
   }
 }
 .banner h4 {
-  color: #fff;
+  color: #ffffff;
 }
 .banner .main-title {
-  color: #fff;
+  color: #ffffff;
   font-family: "Gotham Bold", Helvetica, Arial, sans-serif;
   font-size: 44px;
   font-weight: normal;
   display: block;
 }
 .banner .main-title a {
-  color: #fff;
+  color: #ffffff;
 }
 .banner .sub-title1 {
-  color: #fff;
+  color: #ffffff;
   font-family: "HoeflerTxt-Italic", Georgia, serif !important;
   font-size: 40px;
   font-weight: normal;
   display: block;
 }
 .banner .sub-title2 {
-  color: #fff;
+  color: #ffffff;
   font-family: "Gotham Bold", Helvetica, Arial, sans-serif;
   font-size: 24px;
   font-weight: normal;
   display: block;
 }
 .banner .sub-title3 {
-  color: #fff;
+  color: #ffffff;
   font-family: "HoeflerTxt-Italic", Georgia, serif !important;
   font-size: 24px;
   font-weight: normal;
   display: block;
 }
 .banner .info {
-  color: #fff;
+  color: #ffffff;
   font-family: "Gotham Book", Helvetica, Arial, sans-serif;
   font-size: 21px;
   font-weight: normal;
   display: block;
 }
 .banner .category {
-  color: #fff;
+  color: #ffffff;
   font-family: "Gotham Book", Helvetica, Arial, sans-serif;
   font-size: 18px;
   font-weight: normal;
@@ -7017,7 +7019,7 @@ ul.dated a:hover {
   display: block;
 }
 .banner .description {
-  color: #fff;
+  color: #ffffff;
   font-family: "Gotham Medium", Helvetica, Arial, sans-serif;
   font-size: 18px;
   font-weight: normal;
@@ -7090,7 +7092,7 @@ ul.dated a:hover {
   top: 50%;
   z-index: 101;
   font-size: 40px;
-  color: #000;
+  color: #000000;
   padding: 0 .3%;
   text-decoration: none;
 }
@@ -7114,8 +7116,8 @@ ul.dated a:hover {
 }
 #slide-pager-num a {
   display: inline-block;
-  background: none repeat scroll 0 0 #000;
-  color: #fff;
+  background: none repeat scroll 0 0 #000000;
+  color: #ffffff;
   margin: 5px;
   padding: 5px 10px;
   text-decoration: none;
@@ -7139,7 +7141,7 @@ ul.dated a:hover {
 }
 .slide-caption {
   display: block;
-  color: #fff;
+  color: #ffffff;
   bottom: 30px;
   font-size: 0.9em;
   margin: 0;
@@ -7165,7 +7167,7 @@ ul.dated a:hover {
 }
 .slide-caption h2,
 .slide-caption h3 {
-  color: #fff;
+  color: #ffffff;
   font-size: 24px;
 }
 @media (max-width: 992px) {
@@ -7177,7 +7179,7 @@ ul.dated a:hover {
 .slide-caption-left {
   top: 20%;
   left: 0;
-  color: #fff;
+  color: #ffffff;
   display: block;
   font-size: 0.9em;
   margin: 0;
@@ -7214,7 +7216,7 @@ ul.dated a:hover {
 }
 .slide-caption-left h2,
 .slide-caption-left h3 {
-  color: #fff;
+  color: #ffffff;
   font-size: 24px;
 }
 @media (max-width: 992px) {
@@ -7226,7 +7228,7 @@ ul.dated a:hover {
 .slide-caption-right {
   top: 20%;
   right: 0;
-  color: #fff;
+  color: #ffffff;
   display: block;
   font-size: 0.9em;
   margin: 0;
@@ -7263,7 +7265,7 @@ ul.dated a:hover {
 }
 .slide-caption-right h2,
 .slide-caption-right h3 {
-  color: #fff;
+  color: #ffffff;
   font-size: 24px;
 }
 @media (max-width: 992px) {
@@ -7300,10 +7302,10 @@ ul.dated a:hover {
   }
 }
 .carousel-inner h4 {
-  color: #fff;
+  color: #ffffff;
 }
 .carousel-inner .main-title {
-  color: #fff;
+  color: #ffffff;
   font-family: "Gotham Bold", Helvetica, Arial, sans-serif;
   font-size: 41px;
   font-weight: normal;
@@ -7340,38 +7342,38 @@ ul.dated a:hover {
   }
 }
 .carousel-inner .main-title a {
-  color: #fff;
+  color: #ffffff;
 }
 .carousel-inner .sub-title1 {
-  color: #fff;
+  color: #ffffff;
   font-family: "HoeflerTxt-Italic", Georgia, serif !important;
   font-size: 40px;
   font-weight: normal;
   display: block;
 }
 .carousel-inner .sub-title2 {
-  color: #fff;
+  color: #ffffff;
   font-family: "Gotham Bold", Helvetica, Arial, sans-serif;
   font-size: 24px;
   font-weight: normal;
   display: block;
 }
 .carousel-inner .sub-title3 {
-  color: #fff;
+  color: #ffffff;
   font-family: "HoeflerTxt-Italic", Georgia, serif !important;
   font-size: 24px;
   font-weight: normal;
   display: block;
 }
 .carousel-inner .info {
-  color: #fff;
+  color: #ffffff;
   font-family: "Gotham Book", Helvetica, Arial, sans-serif;
   font-size: 21px;
   font-weight: normal;
   display: block;
 }
 .carousel-inner .category {
-  color: #fff;
+  color: #ffffff;
   font-family: "Gotham Book", Helvetica, Arial, sans-serif;
   font-size: 18px;
   font-weight: normal;
@@ -7379,7 +7381,7 @@ ul.dated a:hover {
   display: block;
 }
 .carousel-inner .description {
-  color: #fff;
+  color: #ffffff;
   font-family: "Gotham Medium", Helvetica, Arial, sans-serif;
   font-size: 18px;
   font-weight: normal;
@@ -7424,7 +7426,7 @@ ul.dated a:hover {
 .carousel-caption-right {
   top: 20%;
   right: 0;
-  color: #fff;
+  color: #ffffff;
   display: block;
   font-size: 0.9em;
   margin: 0;
@@ -7461,7 +7463,7 @@ ul.dated a:hover {
 }
 .carousel-caption-right h2,
 .carousel-caption-right h3 {
-  color: #fff;
+  color: #ffffff;
   font-size: 24px;
 }
 @media (max-width: 992px) {
@@ -7473,7 +7475,7 @@ ul.dated a:hover {
 .carousel-caption-left {
   top: 20%;
   left: 0;
-  color: #fff;
+  color: #ffffff;
   display: block;
   font-size: 0.9em;
   margin: 0;
@@ -7510,7 +7512,7 @@ ul.dated a:hover {
 }
 .carousel-caption-left h2,
 .carousel-caption-left h3 {
-  color: #fff;
+  color: #ffffff;
   font-size: 24px;
 }
 @media (max-width: 992px) {
@@ -7603,7 +7605,7 @@ ul.dated a:hover {
   }
 }
 #blog h1.site-title {
-  color: #fff;
+  color: #ffffff;
   font-family: "Gotham Bold", Helvetica, Arial, sans-serif;
   font-size: 30px;
   font-weight: 700;
@@ -7623,7 +7625,7 @@ ul.dated a:hover {
 }
 #blog h2.site-description {
   font-family: "Gotham Narrow Bold", Helvetica, Arial, sans-serif !important;
-  color: #fff;
+  color: #ffffff;
   font-size: 1em;
   opacity: 0.6;
   text-align: center;
@@ -7790,19 +7792,19 @@ ul.dated a:hover {
 }
 .country-report-card h2,
 .country-report-card h3 {
-  color: #fff;
+  color: #ffffff;
 }
 .country-report-card a {
   color: #f37654;
 }
 .country-report-card dt {
   font-size: 24px;
-  color: #fff;
+  color: #ffffff;
 }
 .country-report-card dd,
 .country-report-card h2,
 .country-report-card h3 {
-  color: #fff;
+  color: #ffffff;
 }
 .country-report-card a {
   color: #f37654;
@@ -7981,15 +7983,15 @@ ul.dated a:hover {
   background-repeat: no-repeat;
 }
 #fb-feed a {
-  color: #fff;
+  color: #ffffff;
 }
 #social-feeds .title {
-  color: #fff;
+  color: #ffffff;
   float: left;
   font-weight: bold;
 }
 #social-feeds .title a {
-  color: #fff;
+  color: #ffffff;
 }
 #social-feeds .time {
   float: right;
@@ -8130,7 +8132,7 @@ ul.dated a:hover {
 }
 @media (max-width: 992px) {
   #work-map {
-    background-color: #fff;
+    background-color: #ffffff;
   }
 }
 #work-map .bannerimg {
@@ -8204,7 +8206,7 @@ h2.bio-title {
   max-width: 90%;
   padding: 0;
   width: 90%;
-  background: #fff;
+  background: #ffffff;
 }
 .story-carousel .story {
   position: relative;
@@ -8229,7 +8231,7 @@ h2.bio-title {
   top: 50%;
   z-index: 101;
   font-size: 40px;
-  color: #000;
+  color: #000000;
   padding: 0 .3%;
   text-decoration: none;
 }
