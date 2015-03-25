@@ -5902,7 +5902,7 @@ div.responsive {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff6daadc', endColorstr='#ff6daadc', GradientType=0);
 }
 /*.left-menu{
-	padding: 15px 0;
+    padding: 15px 0;
 }*/
 /*********footer********/
 footer {
@@ -6046,28 +6046,74 @@ footer #search .form-control {
 .btn-default {
   background-color: #ee3124;
   border-color: #ee3124;
-  color: #FFF;
+  color: #ffffff;
 }
 .btn-default:hover,
 .btn-default:focus,
 .btn-default:active,
 .btn-default.active {
-  color: #fff;
+  color: #ffffff;
   background-color: #f37654;
   border-color: #f37654;
 }
 .btn-blue {
   background-color: #4b79bc;
   border-color: #4b79bc;
-  color: #FFF;
+  color: #ffffff;
 }
 .btn-blue:hover,
 .btn-blue:focus,
 .btn-blue:active,
 .btn-blue.active {
-  color: #fff;
+  color: #ffffff;
   background-color: #6daadc;
   border-color: #6daadc;
+}
+.btn-clear-blue {
+  background-color: #ffffff;
+  border: 1px solid #4b79bc;
+  color: #4b79bc;
+}
+.btn-clear-blue:hover,
+.btn-clear-blue:focus,
+.btn-clear-blue:active {
+  color: #ffffff;
+  background-color: #4b79bc;
+}
+.btn-clear-red {
+  background-color: #ffffff;
+  border: 1px solid #ee3124;
+  color: #ee3124;
+}
+.btn-clear-red:hover,
+.btn-clear-red:focus,
+.btn-clear-red:active {
+  color: #ffffff;
+  background-color: #ee3124;
+}
+.btn-blue-red {
+  background-color: #6daadc;
+  color: #ffffff;
+  font-family: "Gotham Black", sans-serif;
+  font-weight: bold;
+}
+.btn-blue-red:hover,
+.btn-blue-red:focus,
+.btn-blue-red:active {
+  background-color: #f37654;
+  color: #ffffff;
+}
+.btn-red-blue {
+  background-color: #f37654;
+  color: #ffffff;
+  font-family: "Gotham Black", sans-serif;
+  font-weight: bold;
+}
+.btn-red-blue:hover,
+.btn-red-blue:focus,
+.btn-red-blue:active {
+  background-color: #6daadc;
+  color: #ffffff;
 }
 .row-st {
   padding: 15px 0;
@@ -8240,30 +8286,6 @@ h2.bio-title {
 }
 .text-navy {
   color: #04247b;
-}
-.btn-clear-blue {
-  background-color: #ffffff;
-  border: 1px solid #4b79bc;
-  color: #4b79bc;
-}
-.btn-clear-blue:hover,
-.btn-clear-blue:focus,
-.btn-clear-blue:active,
-.btn-clear-blue.active {
-  color: #ffffff;
-  background-color: #4b79bc;
-}
-.btn-clear-red {
-  background-color: #ffffff;
-  border: 1px solid #ee3124;
-  color: #ee3124;
-}
-.btn-clear-red:hover,
-.btn-clear-red:focus,
-.btn-clear-red:active,
-.btn-clear-red.active {
-  color: #ffffff;
-  background-color: #ee3124;
 }
 .stripe {
   min-height: 20px;

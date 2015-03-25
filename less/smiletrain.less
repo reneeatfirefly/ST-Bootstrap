@@ -2,7 +2,7 @@
 
 body {
     margin-top: 65px;
-    @media (max-width: 992px) {
+    @media (max-width: @screen-md) {
         margin-top: 105px;
     }
     @media (max-width: 268px) {
@@ -95,17 +95,9 @@ div.responsive {
         }
         &:hover,
         &:focus {
-            #gradient.vertical( @red-light;
-            @red-light;
-            0%;
-            50%;
-            );
+            #gradient.vertical(@red-light; @red-light; 0%; 50%;);
         }
-        #gradient.vertical(@red-light;
-        @red-dark;
-        0%;
-        50%;
-        );
+        #gradient.vertical(@red-light; @red-dark; 0%; 50%;);
     }
     #powerofasmile-btn {
         @media (max-width: 767px) {
@@ -148,7 +140,7 @@ div.responsive {
     }
 }
 /*.left-menu{
-	padding: 15px 0;
+    padding: 15px 0;
 }*/
 /*********footer********/
 
@@ -175,7 +167,7 @@ footer {
         letter-spacing: 0.15px;
         line-height: 19px;
         &:hover, &:focus {
-            color: #f37654 !important;
+            color: @red-light !important;
             text-decoration: none;
         }
     }
@@ -196,13 +188,13 @@ footer {
         }
     }
     .footer-section {
-        border-right: 2px dotted #ffffff;
+        border-right: 2px dotted @white;
         @media (max-width: @screen-md-min) {
             border-right: none;
         }
     }
     #row1 {
-        border-bottom: 2px dotted #ffffff;
+        border-bottom: 2px dotted @white;
         padding: 85px 0 25px;
     }
     #row2 {
@@ -216,7 +208,7 @@ footer {
         padding: 0 5px;
     }
     #be-social {
-        border-bottom: 2px dotted #ffffff;
+        border-bottom: 2px dotted @white;
     }
     .footer-bg {
         background: url("../images/footer-bg-top.png") no-repeat scroll left top rgba(0, 0, 0, 0);
@@ -224,10 +216,10 @@ footer {
     }
     @media (max-width: @screen-md-min) {
         #col3 {
-            border-left: 2px dotted #ffffff;
+            border-left: 2px dotted @white;
         }
         #col4 {
-            border-top: 2px dotted #ffffff;
+            border-top: 2px dotted @white;
             margin-top: 10px;
         }
         .navbar-form {
@@ -259,7 +251,7 @@ footer {
         vertical-align: middle;
         .form-control {
             width: 95%;
-            @media (min-width: 992px) and (max-width: 1200px) {
+            @media (min-width: @screen-md) and (max-width: @screen-lg) {
                 padding: 6px;
             }
         }
@@ -274,33 +266,67 @@ footer {
 }
 
 .btn-default {
-    background-color: #ee3124;
-    border-color: #ee3124;
-    color: #FFF;
-}
-
-.btn-default:hover,
-.btn-default:focus,
-.btn-default:active,
-.btn-default.active {
-    color: #fff;
-    background-color: #f37654;
-    border-color: #f37654;
+    background-color: @red-dark;
+    border-color: @red-dark;
+    color: @white;
+    &:hover, &:focus, &:active, &.active {
+        color: @white;
+        background-color: @red-light;
+        border-color: @red-light;
+    }
 }
 
 .btn-blue {
-    background-color: #4b79bc;
-    border-color: #4b79bc;
-    color: #FFF;
+    background-color: @blue-dark;
+    border-color: @blue-dark;
+    color: @white;
+    &:hover, &:focus, &:active, &.active {
+        color: @white;
+        background-color: @blue-light;
+        border-color: @blue-light;
+    }
 }
 
-.btn-blue:hover,
-.btn-blue:focus,
-.btn-blue:active,
-.btn-blue.active {
-    color: #fff;
-    background-color: #6daadc;
-    border-color: #6daadc;
+.btn-clear-blue {
+    background-color: @white;
+    border: 1px solid @blue-dark;
+    color: @blue-dark;
+    &:hover, &:focus, &:active {
+        color: @white;
+        background-color: @blue-dark;
+    }
+}
+
+.btn-clear-red {
+    background-color: @white;
+    border: 1px solid @red-dark;
+    color: @red-dark;
+    &:hover, &:focus, &:active {
+        color: @white;
+        background-color: @red-dark;
+    }
+}
+
+.btn-blue-red {
+    background-color: @blue-light;
+    color: @white;
+    font-family: "Gotham Black", sans-serif;
+    font-weight: bold;
+    &:hover, &:focus, &:active {
+        background-color: @red-light;
+        color: @white;
+    }
+}
+
+.btn-red-blue {
+    background-color: @red-light;
+    color: @white;
+    font-family: "Gotham Black", sans-serif;
+    font-weight: bold;
+    &:hover, &:focus, &:active {
+        background-color: @blue-light;
+        color: @white;
+    }
 }
 
 .row-st {
@@ -338,7 +364,7 @@ footer {
 
 .section-nav {
     h2 {
-        color: #000;
+        color: @black;
         font-size: 18px;
         margin-bottom: 25px;
         font-weight: bold;
@@ -365,7 +391,7 @@ footer {
     }
 }
 
-@media (min-width: 992px) {
+@media (min-width: @screen-md) {
     .sidebar.section-nav {
         padding-left: 0px;
         float: left;
@@ -381,7 +407,7 @@ footer {
 }
 
 .section-nav a:hover {
-    color: #6daadc;
+    color: @blue-light;
 }
 
 .section-heading {
@@ -389,12 +415,12 @@ footer {
     font-weight: normal;
     text-transform: uppercase;
     margin: 15px 0;
-    color: #ee3124;
+    color: @red-dark;
     a {
-        color: #ee3124;
-    }
-    a:hover {
-        color: #6daadc;
+        color: @red-dark;
+        &:hover {
+            color: @blue-light;
+        }
     }
 }
 
@@ -441,16 +467,7 @@ footer {
     p {
         font-size: 14px;
     }
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    .h2,
-    .h3,
-    .h4,
-    .h5,
-    .h6 {
+    h2, h3, h4, h5, h6, .h2, .h3, .h4, .h5, .h6 {
         color: @navy-dark;
     }
 }
@@ -470,7 +487,7 @@ footer {
 }
 
 .orange-box {
-    color: #ffffff;
+    color: @white;
     min-height: 1px;
     position: relative;
     text-align: center;
@@ -489,7 +506,7 @@ footer {
 }
 
 .blue-box {
-    color: #ffffff;
+    color: @white;
     min-height: 1px;
     position: relative;
     #gradient.vertical( @blue-light;
@@ -498,10 +515,10 @@ footer {
     50%;
     );
     h2, h3 {
-        color: #fff;
+        color: @white;
     }
     a {
-        color: #f37654;
+        color: @red-light;
     }
 }
 /***donor bars***/
@@ -518,7 +535,7 @@ footer {
     width: 100%;
     font-family: "HoeflerTxt-Roman", Georgia, serif !important;
     font-size: 24px;
-    color: #fff;
+    color: @white;
     line-height: 1;
     position: relative;
     div {
@@ -528,7 +545,7 @@ footer {
     .cta {
         float: none;
         width: 100%;
-        background-color: #ee3124;
+        background-color: @red-dark;
         font-family: "Gotham Book", Helvetica, Arial, sans-serif !important;
         @media (min-width: @screen-sm-min) {
             width: 30%;
@@ -553,7 +570,7 @@ footer {
         }
     }
     a {
-        color: #fff;
+        color: @white;
         display: block;
         width: 100%;
     }
@@ -692,12 +709,12 @@ table.paginator {
             padding: 6px 12px;
             line-height: 1.42857143;
             text-decoration: none;
-            color: #4b79bc;
-            background-color: #ffffff;
+            color: @blue-dark;
+            background-color: @white;
             border: 1px solid #dddddd;
             margin-left: -1px;
             :hover, :focus {
-                color: #6daadc;
+                color: @blue-light;
                 background-color: #eeeeee;
                 border-color: #dddddd;
             }
@@ -714,7 +731,7 @@ table.paginator {
     }
     td.pg-curr {
         z-index: 2;
-        color: #ffffff;
+        color: @white;
         background-color: #428bca;
         border: 1px solid #428bca;
         cursor: default;
@@ -737,7 +754,7 @@ table.paginator {
     font-weight: normal;
     a {
         display: inline-block;
-        color: #000;
+        color: @black;
         background: url(../images/arrow-se.png) no-repeat 100% 2px;
         padding-right: 17px;
     }
@@ -817,7 +834,7 @@ table.paginator {
 
 .date-style-a {
     background: none repeat scroll 0 0 #404040;
-    color: #fff;
+    color: @white;
     font-weight: bold;
     line-height: 1;
     padding: 13px 0 0 13px;
@@ -878,7 +895,7 @@ ul.dated {
 
 .appArea a:link,
 .trPage a:link {
-    color: #4b79bc
+    color: @blue-dark
 }
 
 .trPage {
@@ -925,12 +942,12 @@ ul.dated {
         line-height: 42px;
         height: 42px;
         font-size: 20px;
-        color: #ffffff;
+        color: @white;
         text-transform: uppercase;
     }
     a {
         display: block;
-        color: #ffffff;
+        color: @white;
         text-decoration: none;
         margin: 0px 25px 5px 25px;
         line-height: 37px;
@@ -975,8 +992,8 @@ ul.dated {
     top: 0;
     width: 100%;
     @media (max-width: @screen-md-min) {
-        border-left: 15px solid #fff;
-        border-right: 15px solid #fff;
+        border-left: 15px solid @white;
+        border-right: 15px solid @white;
     }
 }
 
@@ -989,7 +1006,7 @@ ul.dated {
         }
     }
     h2.heading {
-        color: #4b79bc !important;
+        color: @blue-dark !important;
         font-size: 40px;
         margin-bottom: .25em;
         text-align: center;
@@ -999,48 +1016,48 @@ ul.dated {
         }
     }
     h4 {
-        color: #fff;
+        color: @white;
     }
     .main-title {
-        color: #fff;
+        color: @white;
         font-family: "Gotham Bold", Helvetica, Arial, sans-serif;
         font-size: 44px;
         font-weight: normal;
         display: block;
         a {
-            color: #fff;
+            color: @white;
         }
     }
     .sub-title1 {
-        color: #fff;
+        color: @white;
         font-family: "HoeflerTxt-Italic", Georgia, serif !important;
         font-size: 40px;
         font-weight: normal;
         display: block;
     }
     .sub-title2 {
-        color: #fff;
+        color: @white;
         font-family: "Gotham Bold", Helvetica, Arial, sans-serif;
         font-size: 24px;
         font-weight: normal;
         display: block;
     }
     .sub-title3 {
-        color: #fff;
+        color: @white;
         font-family: "HoeflerTxt-Italic", Georgia, serif !important;
         font-size: 24px;
         font-weight: normal;
         display: block;
     }
     .info {
-        color: #fff;
+        color: @white;
         font-family: "Gotham Book", Helvetica, Arial, sans-serif;
         font-size: 21px;
         font-weight: normal;
         display: block;
     }
     .category {
-        color: #fff;
+        color: @white;
         font-family: "Gotham Book", Helvetica, Arial, sans-serif;
         font-size: 18px;
         font-weight: normal;
@@ -1048,7 +1065,7 @@ ul.dated {
         display: block;
     }
     .description {
-        color: #fff;
+        color: @white;
         font-family: "Gotham Medium", Helvetica, Arial, sans-serif;
         font-size: 18px;
         font-weight: normal;
@@ -1121,7 +1138,7 @@ ul.dated {
     top: 50%;
     z-index: 101;
     font-size: 40px;
-    color: #000;
+    color: @black;
     padding: 0 .3%;
     text-decoration: none;
     @media (max-width: 500px) {
@@ -1147,8 +1164,8 @@ ul.dated {
 
 #slide-pager-num a {
     display: inline-block;
-    background: none repeat scroll 0 0 #000;
-    color: #fff;
+    background: none repeat scroll 0 0 @black;
+    color: @white;
     margin: 5px;
     padding: 5px 10px;
     text-decoration: none;
@@ -1171,12 +1188,12 @@ ul.dated {
 }
 
 .slide-pager-bullet a.cycle-pager-active {
-    background: none repeat scroll 0 0 #ee3124;
+    background: none repeat scroll 0 0 @red-dark;
 }
 
 .slide-caption {
     display: block;
-    color: #fff;
+    color: @white;
     bottom: 30px;
     font-size: 0.9em;
     margin: 0;
@@ -1196,7 +1213,7 @@ ul.dated {
     }
     h2,
     h3 {
-        color: #fff;
+        color: @white;
         font-size: 24px;
         @media (max-width: @screen-md-min) {
             font-size: 18px;
@@ -1207,7 +1224,7 @@ ul.dated {
 .slide-caption-left {
     top: 20%;
     left: 0;
-    color: #fff;
+    color: @white;
     display: block;
     font-size: 0.9em;
     margin: 0;
@@ -1236,7 +1253,7 @@ ul.dated {
     }
     h2,
     h3 {
-        color: #fff;
+        color: @white;
         font-size: 24px;
         @media (max-width: @screen-md-min) {
             font-size: 18px;
@@ -1247,7 +1264,7 @@ ul.dated {
 .slide-caption-right {
     top: 20%;
     right: 0;
-    color: #fff;
+    color: @white;
     display: block;
     font-size: 0.9em;
     margin: 0;
@@ -1276,7 +1293,7 @@ ul.dated {
     }
     h2,
     h3 {
-        color: #fff;
+        color: @white;
         font-size: 24px;
         @media (max-width: @screen-md-min) {
             font-size: 18px;
@@ -1295,8 +1312,8 @@ ul.dated {
 }
 
 .carousel-indicators li.active {
-    background-color: #ee3124;
-    border-color: #ee3124;
+    background-color: @red-dark;
+    border-color: @red-dark;
 }
 
 .carousel-inner {
@@ -1304,7 +1321,7 @@ ul.dated {
         width: 100%;
     }
     h2.heading {
-        color: #4b79bc !important;
+        color: @blue-dark !important;
         font-size: 40px;
         margin-bottom: .25em;
         text-align: center;
@@ -1314,21 +1331,21 @@ ul.dated {
         }
     }
     h4 {
-        color: #fff;
+        color: @white;
     }
     .main-title {
-        color: #fff;
+        color: @white;
         font-family: "Gotham Bold", Helvetica, Arial, sans-serif;
         font-size: 41px;
         font-weight: normal;
         display: block;
-        @media (max-width: 1200px) {
+        @media (max-width: @screen-lg) {
             font-size: 32px;
         }
-        @media (max-width: 992px) {
+        @media (max-width: @screen-md) {
             font-size: 24px;
         }
-        @media (max-width: 768px) {
+        @media (max-width: @screen-sm) {
             font-size: 22px;
         }
         @media (max-width: 620px) {
@@ -1342,38 +1359,38 @@ ul.dated {
         }
     }
     .main-title a {
-        color: #fff;
+        color: @white;
     }
     .sub-title1 {
-        color: #fff;
+        color: @white;
         font-family: "HoeflerTxt-Italic", Georgia, serif !important;
         font-size: 40px;
         font-weight: normal;
         display: block;
     }
     .sub-title2 {
-        color: #fff;
+        color: @white;
         font-family: "Gotham Bold", Helvetica, Arial, sans-serif;
         font-size: 24px;
         font-weight: normal;
         display: block;
     }
     .sub-title3 {
-        color: #fff;
+        color: @white;
         font-family: "HoeflerTxt-Italic", Georgia, serif !important;
         font-size: 24px;
         font-weight: normal;
         display: block;
     }
     .info {
-        color: #fff;
+        color: @white;
         font-family: "Gotham Book", Helvetica, Arial, sans-serif;
         font-size: 21px;
         font-weight: normal;
         display: block;
     }
     .category {
-        color: #fff;
+        color: @white;
         font-family: "Gotham Book", Helvetica, Arial, sans-serif;
         font-size: 18px;
         font-weight: normal;
@@ -1381,7 +1398,7 @@ ul.dated {
         display: block;
     }
     .description {
-        color: #fff;
+        color: @white;
         font-family: "Gotham Medium", Helvetica, Arial, sans-serif;
         font-size: 18px;
         font-weight: normal;
@@ -1425,14 +1442,14 @@ ul.dated {
 .carousel-caption-right {
     top: 20%;
     right: 0;
-    color: #fff;
+    color: @white;
     display: block;
     font-size: 0.9em;
     margin: 0;
     padding: 1% 5% 1% 1%;
     position: absolute;
     width: 40%;
-    @media (max-width: 992px) {
+    @media (max-width: @screen-md) {
         top: 2%;
         right: 5%;
         font-size: 0.7em;
@@ -1454,10 +1471,10 @@ ul.dated {
     }
     h2,
     h3 {
-        color: #fff;
+        color: @white;
         font-size: 24px;
     }
-    @media (max-width: 992px) {
+    @media (max-width: @screen-md) {
         h2, h3 {
             font-size: 18px;
         }
@@ -1467,14 +1484,14 @@ ul.dated {
 .carousel-caption-left {
     top: 20%;
     left: 0;
-    color: #fff;
+    color: @white;
     display: block;
     font-size: 0.9em;
     margin: 0;
     padding: 1% 1% 1% 5%;
     position: absolute;
     width: 40%;
-    @media (max-width: 992px) {
+    @media (max-width: @screen-md) {
         top: 2%;
         left: 5%;
         font-size: 0.7em;
@@ -1496,10 +1513,10 @@ ul.dated {
     }
     h2,
     h3 {
-        color: #fff;
+        color: @white;
         font-size: 24px;
     }
-    @media (max-width: 992px) {
+    @media (max-width: @screen-md) {
         h2, h3 {
             font-size: 18px;
         }
@@ -1539,7 +1556,7 @@ ul.dated {
     margin-top: 45px;
 }
 
-@media (min-width: 992px) {
+@media (min-width: @screen-md) {
     .home .main-content {
         padding-left: 45px;
     }
@@ -1602,7 +1619,7 @@ ul.dated {
 }
 
 #blog h1.site-title {
-    color: #fff;
+    color: @white;
     font-family: "Gotham Bold", Helvetica, Arial, sans-serif;
     font-size: 30px;
     font-weight: 700;
@@ -1624,7 +1641,7 @@ ul.dated {
 
 #blog h2.site-description {
     font-family: "Gotham Narrow Bold", Helvetica, Arial, sans-serif !important;
-    color: #fff;
+    color: @white;
     font-size: 1em;
     opacity: 0.6;
     text-align: center;
@@ -1768,15 +1785,15 @@ ul.dated {
     .blue-box;
     dt {
         font-size: 24px;
-        color: #fff;
+        color: @white;
     }
     dd,
     h2,
     h3 {
-        color: #fff;
+        color: @white;
     }
     a {
-        color: #f37654;
+        color: @red-light;
     }
 }
 /****Get Involved*****/
@@ -1872,7 +1889,7 @@ ul.dated {
     }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: @screen-sm) and (max-width: 991px) {
     #blog-list,
     #news-list,
     #events-list {
@@ -1905,7 +1922,7 @@ ul.dated {
 }
 
 #fb-feed {
-    background-color: #4b79bc;
+    background-color: @blue-dark;
     background-image: url("../images/icon-31-fb.gif");
     color: #aebdde;
     background-position: 20px 20px;
@@ -1913,17 +1930,17 @@ ul.dated {
 }
 
 #fb-feed a {
-    color: #fff;
+    color: @white;
 }
 
 #social-feeds .title {
-    color: #fff;
+    color: @white;
     float: left;
     font-weight: bold;
 }
 
 #social-feeds .title a {
-    color: #fff;
+    color: @white;
 }
 
 #social-feeds .time {
@@ -1973,7 +1990,7 @@ ul.dated {
 }
 
 .link-style-b a {
-    color: #ee3124;
+    color: @red-dark;
 }
 
 .link-pdf {
@@ -2042,7 +2059,7 @@ ul.dated {
 
 @media (max-width: @screen-md-min) {
     #work-map {
-        background-color: #fff;
+        background-color: @white;
     }
 }
 
@@ -2074,18 +2091,17 @@ h2.bio-title {
     margin-bottom: 19px;
     padding-bottom: 19px;
     clear: both;
+    h3 {
+        font-weight: normal;
+        letter-spacing: -0.5px;
+        margin-bottom: 10px;
+    }
+    p {
+        letter-spacing: -0.5px;
+        margin: 0 0 10px 0;
+    }
 }
 
-.bio h3 {
-    font-weight: normal;
-    letter-spacing: -0.5px;
-    margin-bottom: 10px;
-}
-
-.bio p {
-    letter-spacing: -0.5px;
-    margin: 0 0 10px 0;
-}
 /*****Stories****/
 
 .story-detail blockquote {
@@ -2099,7 +2115,7 @@ h2.bio-title {
     padding-top: 40px;
     text-align: right;
     width: 27.58%;
-    @media (max-width: 768px) {
+    @media (max-width: @screen-sm) {
         width: 100%;
         margin: 0;
     }
@@ -2118,7 +2134,7 @@ h2.bio-title {
         max-width: 90%;
         padding: 0;
         width: 90%;
-        background: #fff;
+        background: @white;
     }
     .story {
         .make-md-column(4);
@@ -2133,7 +2149,7 @@ h2.bio-title {
         top: 50%;
         z-index: 101;
         font-size: 40px;
-        color: #000;
+        color: @black;
         padding: 0 .3%;
         text-decoration: none;
         @media (max-width: 500px) {
@@ -2192,41 +2208,11 @@ h2.bio-title {
     color: @navy-dark;
 }
 
-// clear buttons
-.btn-clear-blue {
-    background-color: @white;
-    border: 1px solid @blue-dark;
-    color: @blue-dark;
-}
-
-.btn-clear-blue:hover,
-.btn-clear-blue:focus,
-.btn-clear-blue:active,
-.btn-clear-blue.active {
-    color: @white;
-    background-color: @blue-dark;
-}
-
-.btn-clear-red {
-    background-color: @white;
-    border: 1px solid @red-dark;
-    color: @red-dark;
-}
-
-.btn-clear-red:hover,
-.btn-clear-red:focus,
-.btn-clear-red:active,
-.btn-clear-red.active {
-    color: @white;
-    background-color: @red-dark;
-}
-
 //stripes
 .stripe {
     min-height: 20px;
     border: 1px solid;
     margin: 30px 0 30px 0;
-
     h1, h2, h3, .h1, .h2, .h3 {
         font-family: "Gotham Black", sans-serif;
         font-weight: bold;
@@ -2276,16 +2262,14 @@ h2.bio-title {
     }
 }
 
-//get involved
+//get involved page
 .involved {
     padding: 10px;
     margin: 0px 0 20px 0;
     border-right: 1px solid #eeeeee;
-
-    .involved-body{
-    	height:300px;
+    .involved-body {
+        height: 300px;
     }
-
     img {
         height: auto;
         width: 100%;
@@ -2295,4 +2279,3 @@ h2.bio-title {
 .involved:last-child {
     border-right: none;
 }
-
