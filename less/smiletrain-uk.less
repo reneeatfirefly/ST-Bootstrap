@@ -10,6 +10,9 @@ body.default-uk {
     }
     @media (max-width: @screen-sm) {
         margin-top: 150px;
+        footer #row2 p {
+            text-align: center;
+        }
     }
     @media (max-width: 420px) {
         margin-top: 165px;
@@ -39,20 +42,13 @@ body.default-uk {
             margin: 0;
             text-indent: -9999px;
         }
-
         img {
-              width: 100%
+            width: 100%
         }
     }
 }
 
-@media (max-width: 768px) {
-    .default-uk footer #row2 p {
-        text-align: center;
-    }
-}
-
-@media (min-width: 992px) {
+@media (min-width: @screen-md) {
     .default-uk .footer-logos {
         text-align: center;
     }
