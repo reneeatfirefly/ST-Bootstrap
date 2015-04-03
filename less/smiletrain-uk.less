@@ -1,50 +1,59 @@
 /********UK site********/
 
 body.default-uk {
-  margin-top: 95px;
-}
-@media (max-width: 1200px) {
-  body.default-uk {margin-top: 115px;}
-}
-@media (max-width: 992px) {
-  body.default-uk {margin-top: 135px;}
+    margin-top: 95px;
+    @media (max-width: @screen-lg) {
+        margin-top: 115px;
+    }
+    @media (max-width: @screen-md) {
+        margin-top: 135px;
+    }
+    @media (max-width: @screen-sm) {
+        margin-top: 150px;
+    }
+    @media (max-width: 420px) {
+        margin-top: 165px;
+    }
+    @media (max-width: 300px) {
+        margin-top: 185px;
+    }
+    //why do we have 2?
+    @media (max-width: 268px) {
+        margin-top: 250px;
+    }
+    @media (max-width: 236px) {
+        margin-top: 250px;
+    }
+    .navbar {
+        .alert {
+            padding: 5px;
+            font-size: 12px;
+            a {
+                font-size: 12px;
+            }
+        }
+    }
+    .subpage-feature {
+        h2, h3, p {
+            font-size: 1px;
+            margin: 0;
+            text-indent: -9999px;
+        }
+
+        img {
+              width: 100%
+        }
+    }
 }
 
 @media (max-width: 768px) {
-  body.default-uk {margin-top: 150px;}
+    .default-uk footer #row2 p {
+        text-align: center;
+    }
 }
 
-@media (max-width: 420px) {
-  body.default-uk {margin-top:165px; }
-}
-@media (max-width: 300px) {
-  body.default-uk {margin-top:185px;}
-}
-
-@media (max-width: 268px) {
-  body.default-uk {margin-top:250px;}
-}
-
-@media (max-width: 236px) {
-  body.default-uk {margin-top:250px;}
-}
-
-@media (max-width: 768px){
-.default-uk footer #row2 p{text-align: center;}
-}
-
-.default-uk .navbar .alert{padding: 5px; font-size: 12px;}
-.default-uk .navbar-fixed-top .alert a{font-size: 12px;}
-
-.default-uk .subpage-feature h2, .default-uk .subpage-feature h3, .default-uk .subpage-feature p {
-    font-size: 1px;
-    margin: 0;
-    text-indent: -9999px;
-}
-
-.default-uk .subpage-feature img{width: 100%}
-
-
-@media (min-width: 992px){
-.default-uk .footer-logos{text-align: center;}
+@media (min-width: 992px) {
+    .default-uk .footer-logos {
+        text-align: center;
+    }
 }
