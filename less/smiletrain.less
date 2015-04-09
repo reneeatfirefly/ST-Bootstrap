@@ -2128,10 +2128,14 @@ h2.bio-title {
 }
 
 .story-carousel {
-    padding: 15px;
-    background: #f5f5f5;
+    padding: 15px 0px;
+    background: none repeat scroll 0 0 #e6e6e6;
+	box-shadow: 0 0 73px rgba(0, 0, 0, 0.1) inset;
     position: relative;
     margin-top: 20px;
+	@media (max-width: @screen-md) {
+		margin: 0px;	
+	}
     .cycle-slideshow {
         margin: 0 auto;
         max-width: 90%;
@@ -2182,6 +2186,12 @@ h2.bio-title {
     #stories-carousel-next {
         right: 0;
     }
+}
+
+#stories-large-carousel .darkener{border: none;}
+
+#story-2-carousel .carousel-control.left, #story-2-carousel .carousel-control.right {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
 }
 
 
