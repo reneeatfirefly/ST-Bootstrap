@@ -5791,6 +5791,8 @@ div.responsive {
 .navbar-fixed-top a {
   font-family: "Gotham Narrow Bold", Helvetica, Arial, sans-serif;
   font-size: 15px;
+  -webkit-box-shadow: 0px 0px 17px #cacaca;
+  box-shadow: 0px 0px 17px #cacaca;
 }
 .st-brand {
   /*height: 95px;*/
