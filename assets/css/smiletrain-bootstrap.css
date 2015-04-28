@@ -9067,3 +9067,6 @@ body.default-uk .race-item:hover {
     text-align: center;
   }
 }
+body.students-uk .right-cta #donate-btn {
+  padding-bottom: 0px;
+}
