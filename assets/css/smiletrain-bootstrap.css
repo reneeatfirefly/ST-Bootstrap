@@ -9072,5 +9072,7 @@ body.students-uk .navbar .alert {
   font-size: 12px;
 }
 body.students-uk .navbar .alert a {
+  box-shadow: none;
+  -webkit-box-shadow: none;
   font-size: 12px;
 }
