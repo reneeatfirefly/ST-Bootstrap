@@ -6812,6 +6812,9 @@ ul.dated a:hover {
 .trPage a:link {
   color: #4b79bc;
 }
+.appArea .btn.btn-donate {
+  color: #fff;
+}
 .trPage {
   width: 100%;
 }
@@ -9066,7 +9069,4 @@ body.default-uk .race-item:hover {
   .default-uk .footer-logos {
     text-align: center;
   }
-}
-body.students-uk .right-cta #donate-btn {
-  padding-bottom: 0px;
 }
