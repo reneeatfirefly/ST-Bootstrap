@@ -2,3 +2,7 @@ node_modules/
 test/
 *.zip
 .ftppass
+
+# ignore subline text workspace/project files
+*.sublime-workspace
+*.sublime-project

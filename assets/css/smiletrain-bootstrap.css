@@ -8410,6 +8410,14 @@ h2.bio-title {
 .involved:last-child {
   border-right: none;
 }
+#InputForm {
+  margin-top: 60px;
+}
+@media (max-width: 768px) {
+  #InputForm {
+    margin-top: 30px;
+  }
+}
 /********athletics section********/
 .athletics .right-cta #donate-btn {
   padding-left: 15px;
