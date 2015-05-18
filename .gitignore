@@ -8,3 +8,6 @@ assets/css/smiletrain-bootstrap.min.css
 # ignore sublime text workspace/project files
 *.sublime-workspace
 *.sublime-project
+assets/css/smiletrain-bootstrap.css
+assets/css/smiletrain-bootstrap.css
+assets/css/smiletrain-bootstrap.min.css
