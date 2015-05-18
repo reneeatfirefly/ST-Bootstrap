@@ -6814,6 +6814,9 @@ ul.dated a:hover {
 .trPage a:link {
   color: #4b79bc;
 }
+.appArea .btn.btn-donate {
+  color: #fff;
+}
 .trPage {
   width: 100%;
 }
@@ -8406,6 +8409,14 @@ h2.bio-title {
 }
 .involved:last-child {
   border-right: none;
+}
+#InputForm {
+  margin-top: 60px;
+}
+@media (max-width: 768px) {
+  #InputForm {
+    margin-top: 30px;
+  }
 }
 /********athletics section********/
 .athletics .right-cta #donate-btn {
