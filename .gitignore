@@ -2,3 +2,5 @@ node_modules/
 test/
 *.zip
 .ftppass
+assets/css/smiletrain-bootstrap.css
+assets/css/smiletrain-bootstrap.min.css

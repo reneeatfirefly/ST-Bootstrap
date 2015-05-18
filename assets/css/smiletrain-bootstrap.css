@@ -5791,6 +5791,8 @@ div.responsive {
 .navbar-fixed-top a {
   font-family: "Gotham Narrow Bold", Helvetica, Arial, sans-serif;
   font-size: 15px;
+}
+.navbar-fixed-top {
   -webkit-box-shadow: 0px 0px 17px #cacaca;
   box-shadow: 0px 0px 17px #cacaca;
 }
@@ -9066,7 +9068,4 @@ body.default-uk .race-item:hover {
   .default-uk .footer-logos {
     text-align: center;
   }
-}
-body.students-uk .right-cta #donate-btn {
-  padding-bottom: 0px;
 }
