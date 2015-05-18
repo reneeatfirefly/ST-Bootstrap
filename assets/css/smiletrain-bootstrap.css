@@ -7293,6 +7293,9 @@ ul.dated a:hover {
   background-color: #ee3124;
   border-color: #ee3124;
 }
+.carousel-inner .btn-default {
+  margin: 25px;
+}
 .carousel-inner img {
   width: 100%;
 }
