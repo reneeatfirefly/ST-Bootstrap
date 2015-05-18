@@ -8,5 +8,7 @@ test/
 *.sublime-workspace
 *.sublime-project
 
-assets/css/*
+assets\css\*
 
+assets/css/smiletrain-bootstrap.css
+assets/css/smiletrain-bootstrap.min.css
