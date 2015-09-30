@@ -6387,6 +6387,59 @@ footer #search .form-control {
 .blue-box a {
   color: #f37654;
 }
+/***donation form***/
+.donate_now #donate {
+  white-space: normal;
+}
+.donate_now form input[name="card_number"]::-webkit-outer-spin-button,
+.donate_now form input[name="card_number"]::-webkit-inner-spin-button,
+.donate_now form input[name="card_cvv"]::-webkit-outer-spin-button,
+.donate_now form input[name="card_cvv"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.donate_now .btn-clear-blue.active {
+  background: #4b79bc;
+  color: #fff;
+}
+.donate_now .stripe {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.donate_now .pay-tab {
+  margin-top: 40px;
+}
+.donate_now #DRTV-video {
+  margin-top: 50px;
+}
+.donate_now .btn-default.active,
+.donate_now .btn-default:hover {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+.donate_now .btn-default {
+  background-color: #fff;
+  border-color: #adadad;
+  color: #fff;
+}
+.donate_now .toggle {
+  width: 80px !important;
+}
+.donate_now form#donate_now {
+  padding: 0 20px 0 20px;
+}
+.donate_now .glyphicon-info-sign {
+  color: #4b79bc;
+}
+.donate_now .modal img {
+  max-width: 100%;
+}
+@media screen and (min-width: 992px) {
+  .donate_now .copy-sender-label {
+    float: left;
+  }
+}
 /***donor bars***/
 @media (max-width: 992px) {
   .donor-bar-row {
@@ -7374,6 +7427,7 @@ ul.dated a:hover {
   font-size: 24px;
   font-weight: normal;
   display: block;
+  padding-bottom: 12%;
 }
 .carousel-inner .info {
   color: #ffffff;
