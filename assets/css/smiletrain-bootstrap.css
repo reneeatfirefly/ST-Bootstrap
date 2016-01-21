@@ -6099,7 +6099,6 @@ footer #search .form-control {
   background-color: #6daadc;
   color: #ffffff;
   font-family: "Gotham Black", sans-serif;
-  font-weight: bold;
 }
 .btn-blue-red:hover,
 .btn-blue-red:focus,
@@ -6111,7 +6110,6 @@ footer #search .form-control {
   background-color: #f37654;
   color: #ffffff;
   font-family: "Gotham Black", sans-serif;
-  font-weight: bold;
 }
 .btn-red-blue:hover,
 .btn-red-blue:focus,
@@ -8377,7 +8375,6 @@ h2.bio-title {
 .stripe .h2,
 .stripe .h3 {
   font-family: "Gotham Black", sans-serif;
-  font-weight: bold;
 }
 .stripe .stripe-item {
   border-right: 1px solid;
