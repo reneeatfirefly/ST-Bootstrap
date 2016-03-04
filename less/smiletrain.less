@@ -60,7 +60,7 @@ div.responsive {
 
 .st-brand {
     /*height: 95px;*/
-    
+
     height: auto;
     position: relative;
     z-index: 1000;
@@ -70,7 +70,7 @@ div.responsive {
 }
 
 .right-cta {
-    float: left;
+    float: right;
     width: 100%;
     .text-center();
     padding: 0;
@@ -79,6 +79,7 @@ div.responsive {
         padding: 5px 0;
         @media (max-width: @screen-md-min) {
             padding: 0;
+            width: 100% !important;
         }
         @media (min-width: @screen-md-min) and (max-width: @screen-lg-min) {
             padding: 10px 0px;
@@ -90,7 +91,7 @@ div.responsive {
             color: @white;
         }
         color: @white;
-        float: left;
+        float: right;
         min-height: 1px;
         position: relative;
         width: 100%;
@@ -308,7 +309,7 @@ footer {
         background-color: @blue-dark;
     }
 }
- 
+
 .btn-clear-red {
     background-color: @white;
     border: 1px solid @red-dark;
@@ -576,11 +577,11 @@ footer {
 }
 
 .donate_now .toggle {
-	width:80px !important;	
+	width:80px !important;
 }
 
 .donate_now form#donate_now {
-	padding: 0 20px 0 20px;	
+	padding: 0 20px 0 20px;
 }
 
 .donate_now .glyphicon-info-sign {
@@ -2211,7 +2212,7 @@ h2.bio-title {
     position: relative;
     margin-top: 20px;
 	@media (max-width: @screen-md) {
-		margin: 0px;	
+		margin: 0px;
 	}
     .cycle-slideshow {
         margin: 0 auto;
@@ -2306,7 +2307,7 @@ h2.bio-title {
     border: 1px solid;
     margin: 30px 0 30px 0;
     width:100%;
-    
+
     h1, h2, h3, .h1, .h2, .h3 {
         font-family: "Gotham Black", sans-serif;
     }
